@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_str  - produces output according to a format.
+ * print_str  - function to produce output according to a format.
  * @args: The format string.
  *
  * Return: The number of characters printed.
