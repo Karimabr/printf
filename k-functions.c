@@ -2,8 +2,6 @@
 
 /**
  * print_str  - produces output according to a format.
- * print_char - it produces output according to a format.
- * print_int - produce output according to format.
  * @args: The format string.
  *
  * Return: The number of characters printed.
@@ -24,12 +22,27 @@ int print_str(va_list args)
 	return (len);
 }
 
+/**
+ * print_char  - produces output according to a format.
+ * @args: The format string.
+ *
+ * Return: The number of characters printed.
+ */
+
 int print_char(va_list args)
 {
 	char ch = va_arg(args, int);
 
 	return (_putchar(ch));
 }
+
+/**
+ * print_int  - produces output according to a format.
+ * @args: The format string.
+ *
+ * Return: The number of characters printed.
+ */
+
 int print_int(va_list args)
 {
 	int n = va_arg(args, int);
