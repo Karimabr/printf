@@ -2,9 +2,9 @@
 
 /**
  * print_str  - produces output according to  format
- * @args: The format string.
+ * @args: The format string
  *
- * Return: The number of characters printed.
+ * Return: The numbr of characters printed.
  */
 
 int print_str(va_list args)
