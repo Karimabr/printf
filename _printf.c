@@ -1,14 +1,15 @@
 #include "main.h"
 #include <stdarg.h>
 
-/*
- * main - entry point
- * Description: a function that produces output according to a format.
- * Author: karimabr and chamabe
- * Return: Always (0)
+/**
+ * main - Entry point
+ * Deescription: a function that produces output according to a format
+ * _printf - produces output according to a format.
+ * @format: The format string.
+ * Return: The number of characters printed (excluding the null byte used).
  */
 
-int _printf(const char *format, ...);
+int _printf(const char *format, ...)
 
 {
 	int i, len = 0;
@@ -24,23 +25,23 @@ int _printf(const char *format, ...);
 		{
 			switch (format[i + 1])
 			{
-			case 's';
+				case 's':
 				len += print_str(args);
 				i += 2;
 				break;
-			case 'c';
+				case 'c':
 				len += print_int(args);
 				i = i + 2;
 				break;
-			case 'i';
-				len += print_i nt(args);
-				i = i + 2;
-				break;
-			case'd';
+				case 'i':
 				len += print_int(args);
 				i = i + 2;
 				break;
-			case'%';
+				case'd':
+				len += print_int(args);
+				i = i + 2;
+				break;
+				case'%':
 				i += 1;
 				break;
 			default:
@@ -49,6 +50,6 @@ int _printf(const char *format, ...);
 		}
 		len += _putchar(format[i]);
 	}
-	va_end(arg);
+	va_end(args);
 	return (len);
 }

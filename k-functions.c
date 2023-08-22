@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * File: k_functions.c
- * Description: function to produce output according to a format
- * Author: Karimabr and chamabe
- * Return: success
-*/
+ * main - Entry point
+ * _printf - produces output according to a format.
+ * @format: The format string.
+ *
+ * Return: The number of characters printed.
+ */
 
-/* print_str */
 int print_str(va_list args)
 {
 	char *str = va_arg(args, char *);
@@ -17,12 +17,12 @@ int print_str(va_list args)
 		str = "(null)";
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar((int)str[i]);
+		_putchar(str[i]);
 		len++;
 	}
 	return (len);
 }
-/* print_char */
+
 int print_char(va_list args)
 {
 	char ch = va_arg(args, int);
