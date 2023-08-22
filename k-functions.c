@@ -46,19 +46,23 @@ int print_char(va_list args)
 int print_int(va_list args)
 {
 	int n = va_arg(args, int);
-	unsigned int i, mag = 1, tmp = n;
+	unsigned int i, mag = 1, tmp = n, len = 0;
 
 	if (n < 0)
 	{
 		n *= -1;
 		tmp = n;
-		_putchar('-');
+		len += _putchar('-');
 	}
-while (tmp >= 10)
+
+	while (tmp >= 10)
 	{
-	tmp != 10;
-	mag *= 10;
+		tmp /= 10;
+		mag *= 10;
 	}
-for (i = 1; i != mag; i *= 10)
-	_putchar((n / (mag / i)) % 10 + '0');
+
+	for (i = 1; i <= mag; i *= 10)
+		len += _putchar((n / (mag / i)) % 10 + '0');
+
+	return (len);
 }
