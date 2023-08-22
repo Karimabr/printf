@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * _printf - produces output according to a format.
- * @format: The format string.
+ * print_str  - produces output according to a format.
+ * @args: The format string.
  *
  * Return: The number of characters printed.
  */
