@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/*main.h file*/
+/*main.h files*/
 
 /*included libraries*/
 #include <unistd.h>
