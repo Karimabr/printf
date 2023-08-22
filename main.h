@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 
-/*prototypes included*/
+/*prototype included*/
 int _printf(const char *format, ...);
 int _putchar(int c);
 int print_char(va_list args);
