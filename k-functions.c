@@ -2,6 +2,8 @@
 
 /**
  * print_str  - produces output according to a format.
+ * print_char - it produces output according to a format.
+ * print_int - produce output according to format.
  * @args: The format string.
  *
  * Return: The number of characters printed.

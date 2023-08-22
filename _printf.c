@@ -2,8 +2,6 @@
 #include <stdarg.h>
 
 /**
- * main - Entry point
- * Deescription: a function that produces output according to a format
  * _printf - produces output according to a format.
  * @format: The format string.
  * Return: The number of characters printed (excluding the null byte used).
