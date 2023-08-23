@@ -1,15 +1,10 @@
 #include "main.h"
 
 /**
-<<<<<<< HEAD
- * print_str  - function to produce output according to a format.
- * @args: The format string.
-=======
- * print_str  - produces output according to  format
+ * print_str  - produce output according to a format.
  * @args: The format string
->>>>>>> 2dd45f57874e8092dd0f9ec40d100cba41e606da
  *
- * Return: The numbr of characters printed.
+ * Return: The number of characters printed.
  */
 
 int print_str(va_list args)
